@@ -1,0 +1,104 @@
+.app-header {
+    background-color: #A9A9A9;
+    height: 60px;
+    position: relative;
+}
+.errorMessage {
+    max-width: 194px;
+}
+#fast-food-icon {
+    color: white;
+    margin-left: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-box {
+    width: 250px;
+    margin: auto;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+#search-box-icon {
+    color: white;
+    margin-bottom: 6px;
+}
+
+#search-box-input {
+    color: rgb(255, 255, 255);
+    width: 250px;
+}
+
+.app-login-1 {
+    float: right;
+    margin-right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.app-login-2 {
+    float: right;
+    margin-right: 16px;
+    top: 50%;
+    transform: translateY(35%);
+}
+
+#login-btn-icon {
+    margin-right: 5px;
+}
+
+#user-btn-icon {
+    margin-right: 5px;
+    color: lightgray;
+}
+
+#user-btn {
+    color: lightgray;
+}
+
+.login-signup-tabs {
+    margin-bottom: 20px;
+}
+
+.dispNone {
+    display: none;
+}
+
+.dispBlock {
+    display: block;
+    max-width: 194px;
+}
+
+#modal-login-btn,
+#modal-signup-btn {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .app-header {
+        display: block;
+        height: auto;
+        padding-bottom: 16px;
+    }
+
+    #fast-food-icon {
+        margin: 13px 0 0 16px;
+        position: unset;
+        transform: none;
+    }
+
+    .search-box {
+        margin: 16px 0 0 16px;
+        transform: none;
+    }
+
+    .app-login-1,
+    .app-login-2 {
+        float: none;
+        margin: 16px 0 0 16px;
+        transform: none;
+    }
+}
