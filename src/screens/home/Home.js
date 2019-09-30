@@ -17,7 +17,7 @@ class Home extends Component {
             cards: 0
         }
     }
-    //Added unsafe to supress the warning in the chrome
+
     UNSAFE_componentWillMount() {
         sessionStorage.removeItem('customer-cart');
         let _this = this;
@@ -43,7 +43,7 @@ class Home extends Component {
         window.removeEventListener('resize', this.updateCardsGridListCols);
     }
 
-    //Update the number of cards as per screen size
+
     updateCardsGridListCols = () => {
         if (window.innerWidth >= 1350) {
             this.setState({ cards: 5 });
@@ -69,7 +69,7 @@ class Home extends Component {
     restaurantCardTileOnClickHandler = (restaurantId) => {
         this.props.history.push('/restaurant/' + restaurantId);
     }
-    //implement the search handler
+
     searchHandler = (event) => {
         let _this = this;
         let dataRestaurants = null;

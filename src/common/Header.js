@@ -32,7 +32,7 @@ const loginModalStyle = {
     }
 };
 
-/* Style for underline of the search box when clicked */
+
 const styles = theme => ({
     searchUnderline: {
         '&:after': {
@@ -40,7 +40,7 @@ const styles = theme => ({
         },
     },
 });
-/* Tab Style */
+
 const TabContainer = function (props) {
     return (
         <Typography component='div' style={{ padding: 0, textAlign: 'center' }}>
@@ -216,7 +216,7 @@ class Header extends Component {
     inputSignupContactNoChangeHandler = (event) => {
         this.setState({ signupContactNo: event.target.value });
     }
-    /** Signup Handler */
+   
     singupClickHandler = () => {
         let firstNameReq = false
         if (this.state.firstName === '') {
@@ -348,7 +348,7 @@ class Header extends Component {
     myProfileOnClickHandler = () => {
         this.setState({ anchorEl: null });
     }
-    /** Remove the session data on logout */
+    
     logoutOnClickHandler = () => {
         let xhrPosts = new XMLHttpRequest();
         let _this = this;
